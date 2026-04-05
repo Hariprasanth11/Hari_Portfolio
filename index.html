@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hariprasanth | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+    <div class="logo">Hariprasanth</div>
+   <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('academic')">Academic</a>
+<a href="#" onclick="showPage('skills')">Skills</a>
+<a href="#" onclick="showPage('internship')">Internship</a>
+    <a href="#" onclick="showPage('projects')">Projects</a>
+</nav>
+</header>
+
+<!-- ===== HERO SECTION ===== -->
+<section id="home" class="page active">
+        <div class="hero-grid">
+
+        <!-- LEFT SIDE IMAGE -->
+        <div class="hero-image">
+            <img src="hari.jpg" alt="Hariprasanth">
+            <a href="Hari Professional Resume.pdf" download class="resume-btn">
+                ⬇ Download Resume
+            </a>
+        </div>
+
+        <!-- RIGHT SIDE CONTENT -->
+        <div class="hero-content">
+            <h1>Hariprasanth B B</h1>
+            <h3>Aspiring Full Stack Developer</h3>
+            <p>
+                Third-year Computer Science student passionate about building 
+                clean, scalable and modern web applications.
+            </p>
+
+           
+
+            <div class="contact-box">
+                <div>📧 hariprasanth11062006@gmail.com</div>
+                <div>📱 +91 9360444200</div>
+                <div>📍 Tamil Nadu, India</div>
+            </div>
+            
+            <div class="social-buttons">
+    <a href="https://github.com/Hariprasanth11"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn-outline">
+       GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/hari-prasanth11"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn-outline">
+       LinkedIn
+    </a>
+</div>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= ACADEMIC SECTION ================= -->
+<section id="academic" class="page">
+     <div class="academic-container">
+        <h2 class="section-title">🎓 Academic Overview</h2>
+
+    <!-- Academic Top Card -->
+    <div class="academic-card">
+        <div>
+            <h3>Current CGPA</h3>
+            <h1 class="cgpa">7.75</h1>
+        </div>
+        <div>
+            <h3>K.S. Rangasamy College of Technology</h3>
+            <p>B.E - Computer Science and Engineering</p>
+        </div>
+    </div>
+
+    <!-- Semester Buttons -->
+    <div class="semester-buttons">
+        <button onclick="showSem(1)">Sem 1</button>
+        <button onclick="showSem(2)">Sem 2</button>
+        <button onclick="showSem(3)">Sem 3</button>
+        <button onclick="showSem(4)">Sem 4</button>
+        <button onclick="showSem(5)">Sem 5</button>
+    </div>
+
+    <!-- Semester Details -->
+    <div id="semester-details" class="semester-details"></div>
+    <!-- MARKSHEET SECTION -->
+<div class="marksheet-section">
+
+    <h3>📜 School Mark Sheets</h3>
+
+    <div class="marksheet-buttons">
+        <a href="10th Mark Sheet.jpeg" target="_blank" class="marksheet-btn">10th Marksheet</a>
+        <a href="11th Mark Sheet.jpeg" target="_blank" class="marksheet-btn">11th Marksheet</a>
+        <a href="12th Mark Sheet.jpeg" target="_blank" class="marksheet-btn">12th Marksheet</a>
+    </div>
+
+</div>
+</div>
+
+</section>
+<!-- ================= SKILLS SECTION ================= -->
+<!-- ================= SKILLS SECTION ================= -->
+<section id="skills" class="page">
+
+<div class="skills-wrapper">
+
+    <h2 class="skills-title">🚀 My Technical Expertise</h2>
+
+    <!-- CATEGORY TABS -->
+    <div class="skills-tabs">
+        <button onclick="filterSkills('all')" class="active">All</button>
+        <button onclick="filterSkills('frontend')">Frontend</button>
+        <button onclick="filterSkills('backend')">Backend</button>
+        <button onclick="filterSkills('tools')">Tools</button>
+    </div>
+
+    <!-- SKILL CARDS -->
+    <div class="skills-grid">
+
+        <!-- Frontend -->
+        <div class="skill-card frontend">
+            <div class="circle" data-percent="90">
+                <span>90%</span>
+            </div>
+            <h3>HTML</h3>
+        </div>
+
+        <div class="skill-card frontend">
+            <div class="circle" data-percent="85">
+                <span>85%</span>
+            </div>
+            <h3>CSS</h3>
+        </div>
+
+        <div class="skill-card frontend">
+            <div class="circle" data-percent="80">
+                <span>80%</span>
+            </div>
+            <h3>JavaScript</h3>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-card backend">
+            <div class="circle" data-percent="75">
+                <span>75%</span>
+            </div>
+            <h3>Java</h3>
+        </div>
+
+        <div class="skill-card backend">
+            <div class="circle" data-percent="70">
+                <span>70%</span>
+            </div>
+            <h3>SQL</h3>
+        </div>
+
+        <!-- Tools -->
+         <div class="skill-card tools">
+            <div class="circle" data-percent="87">
+                <span>87%</span>
+            </div>
+            <h3>Figma</h3>
+        </div>
+        <div class="skill-card tools">
+            <div class="circle" data-percent="90">
+                <span>90%</span>
+            </div>
+            <h3>Canva</h3>
+        </div>
+        <div class="skill-card tools">
+            <div class="circle" data-percent="75">
+                <span>75%</span>
+            </div>
+            <h3>Git</h3>
+        </div>
+
+    </div>
+
+</div>
+</section>
+<!-- ================= INTERNSHIP SECTION ================= -->
+<section id="internship" class="page">
+
+<div class="internship-wrapper">
+
+    <h2 class="section-title">💼 Internship Experience</h2>
+
+    <div class="internship-card">
+
+        <div class="internship-badge">
+            EduSkills Virtual Internship
+        </div>
+
+        <h3>Java Full Stack Developer Intern</h3>
+        <p class="duration">Duration: 10 Weeks</p>
+
+        <ul class="internship-points">
+            <li>Worked on Java full stack development concepts and real-time applications.</li>
+            <li>Developed web applications using HTML, CSS and JavaScript.</li>
+            <li>Implemented backend logic using Java.</li>
+            <li>Worked with database connectivity and CRUD operations.</li>
+            <li>Completed mini projects based on full stack development.</li>
+        </ul>
+
+        <a href="Eduskills_Certificate.pdf" target="_blank" class="certificate-btn">
+            🎓 View Certificate
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+<section id="projects" class="page">
+
+<div class="projects-wrapper">
+
+    <h2 class="section-title">🚀 Projects</h2>
+
+    <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <h3>AI Academic Portfolio Dashboard</h3>
+
+            <p class="project-desc">
+                Designed and developed a modern academic portfolio dashboard to showcase 
+                academic performance, skills, internship experience and projects.
+            </p>
+
+            <h4>🛠 Technologies Used</h4>
+            <div class="tech-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>UI/UX Design</span>
+            </div>
+
+            <h4>✨ Features</h4>
+            <ul>
+                <li>Interactive academic dashboard</li>
+                <li>Animated skill analytics chart</li>
+                <li>Internship experience cards</li>
+                <li>Professional responsive layout</li>
+                <li>Placement-ready presentation</li>
+            </ul>
+
+<a href="https://github.com/Hariprasanth11"
+   target="_blank"
+   class="project-btn">
+   🔗 View GitHub
+</a>        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <h3>Website Maintainer – KSRCT</h3>
+
+            <p class="project-desc">
+                Maintained and managed department website content, announcements 
+                and events. Improved layout consistency and readability.
+            </p>
+
+            <p><strong>Department Website Management (01/2025)</strong></p>
+
+            <h4>🛠 Technologies Used</h4>
+            <div class="tech-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Basic JavaScript</span>
+                <span>Content Structuring</span>
+            </div>
+
+            <h4>✨ Responsibilities</h4>
+            <ul>
+                <li>Updated academic content</li>
+                <li>Maintained structured layout</li>
+                <li>Improved responsiveness</li>
+                <li>Ensured content accuracy</li>
+            </ul>
+
+<a href="https://ksrct.ac.in/cse.php"
+   target="_blank"
+   class="project-btn">
+   🌐 Visit Website
+</a>        </div>
+
+    </div>
+
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
