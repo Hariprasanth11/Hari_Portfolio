@@ -48,7 +48,7 @@ Prepare for placement opportunities
 
 You can deploy using GitHub Pages and add your live link here:
 
-https://hariprasanth11.github.io/Hari_Portfolio/
+
 👨‍💻 Author
 
 Hariprasanth B B
